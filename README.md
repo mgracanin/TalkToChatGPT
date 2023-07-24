@@ -1,7 +1,7 @@
 # TalkToChatGPT
 Simple Python class that enables users to talk to ChatGPT (via API call), using voice or typing questions
 
-Usage is simple, but there are some requirements. You need OpenAI API key; just follow these steps to get your OpenAI API key:
+Usage is simple, but there are some requirements. You need OpenAI API key. Just follow these steps to get it:
 
 ## Step 1: Create an OpenAI Account
 
@@ -16,4 +16,14 @@ After signing in to your account, navigate to the API Keys section. This can typ
 Click on the button that says "Create a new API Key" or similar. Follow the prompts to generate a new key. 
 
 Be sure to note down your API key in a safe place, as it will not be shown again. However, if you lose it, you can always generate a new one.
+
+I'm using edge_tts (https://pypi.org/project/edge-tts/) for text to speech and speech_recognition module (https://pypi.org/project/SpeechRecognition/) for speech recognition using microphone. Be sure to installed, as well as other requirements.
+
+# How to use the class?
+
+It is simple, for example:
+
+'''
+assistant = TalkToChatGPT(voice="en-US-JennyNeural", output_file="test.mp3", input_type="voice", language="en-US")
+'''
 
