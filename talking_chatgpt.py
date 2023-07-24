@@ -148,9 +148,7 @@ class TalkToChatGPT:
 
 
 if __name__ == "__main__":
-    #assistant = TalkToChatGPT(voice="hr-HR-GabrijelaNeural", output_file="test.mp3", input_type="voice", language="hr-HR")
     assistant = TalkToChatGPT(voice="en-US-JennyNeural", output_file="test.mp3", input_type="voice", language="en-US")
     asyncio.run(assistant.main())
-
     #asyncio.run(assistant.get_available_voices())
 
