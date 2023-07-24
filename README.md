@@ -28,9 +28,14 @@ It is simple, for example:
 assistant = TalkToChatGPT(voice="en-US-JennyNeural", output_file="test.mp3", input_type="voice", language="en-US")
 asyncio.run(assistant.main())
 ```
-There is also helpful method (get_available_voices()) which pretty prints the dictionary with all available voice for text to speech in edge_tts. You can call like like:
+
+The TalkToChatGPT class includes a convenient method called get_available_voices(). This method queries and displays all the available voices that can be used for the text-to-speech functionality in edge_tts. The output is neatly formatted as a dictionary, with each entry indicating a voice's friendly name and its corresponding short name.
+
+To use this method and list all the available voices, simply call get_available_voices() on an instance of TalkToChatGPT within the asyncio.run() function, as follows:
 
 ```
 asyncio.run(assistant.get_available_voices())
 ```
+
+Remember to replace assistant with your instance of TalkToChatGPT. This call will execute the get_available_voices() method asynchronously, listing all possible voices for your text-to-speech needs.
 
