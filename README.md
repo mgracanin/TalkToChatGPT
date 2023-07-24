@@ -23,7 +23,13 @@ I'm using edge_tts (https://pypi.org/project/edge-tts/) for text to speech and s
 
 It is simple, for example:
 
-'''
+```
 assistant = TalkToChatGPT(voice="en-US-JennyNeural", output_file="test.mp3", input_type="voice", language="en-US")
-'''
+asyncio.run(assistant.main())
+```
+There is also helpful method (get_available_voices()) which pretty prints the dictionary with all available voice for text to speech in edge_tts. You can call like like:
+
+```
+asyncio.run(assistant.get_available_voices())
+```
 
