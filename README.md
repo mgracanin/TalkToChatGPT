@@ -2,9 +2,9 @@
 
 This is a simple class called TalkToChatGPT that interacts with OpenAI's ChatGPT model to have a conversation. The class has methods for initializing the instance, getting user input either from voice or text, converting text to speech, playing the generated speech, typing text on the console, asking a question to the ChatGPT model, getting available voices for text-to-speech conversion, and running the conversation. The main method orchestrates the conversation by asking a question, converting the response to speech, and playing it.
 
-I'm using edge_tts (https://pypi.org/project/edge-tts/) for text to speech and speech_recognition module (https://pypi.org/project/SpeechRecognition/) for speech recognition using microphone. Be sure to install them, as well as other requirements.
+Please note, this script relies on several external libraries, including openai for interacting with the OpenAI API (https://pypi.org/project/openai/), edge_tts for text-to-speech (https://pypi.org/project/edge-tts/), SpeechRecognition for speech recognition (https://pypi.org/project/SpeechRecognition/), ctypes and winmm for playing mp3 files, asyncio for running asynchronous tasks, and json for printing json formatted data.
 
-For this to work, you'll need OpenAI API key. Just follow these steps to get it:
+Alos, for this to work, you'll need OpenAI API key. Just follow these steps to get it:
 
 ### Step 1: Create an OpenAI Account
 
