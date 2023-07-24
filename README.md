@@ -4,7 +4,7 @@ This is a simple class called TalkToChatGPT that interacts with OpenAI's ChatGPT
 
 Keep in mind that the text_to_speech method takes a string as input and asynchronously converts it to speech using the edge_tts.Communicate class and then the output speech is saved to an mp3 file (in the same directory where the talking_chatgpt.py is located). Please note that each new output overwrites the previous mp3 file. Also, keep in mind that the playing of the mp3 file will work only on Windows since I'm using winmm.dll and mciSendString function (https://learn.microsoft.com/en-us/previous-versions/dd757161(v=vs.85)). 
 
-To play mp3 on other operating systems, you can easily use any other Python module. For example you could use playsound (https://pypi.org/project/playsound/):
+To play mp3 on other operating systems, you can easily use any other Python module. For example, you could use playsound (https://pypi.org/project/playsound/):
 ```
 from playsound import playsound
 playsound('/path/to/a/sound/file/you/want/to/play.mp3')
