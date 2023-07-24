@@ -1,6 +1,8 @@
 # TalkToChatGPT
 
-This is a simple class called TalkToChatGPT that interacts with OpenAI's ChatGPT model to have a conversation. The class has methods for initializing the instance, getting user input either from voice or text, converting text to speech, playing the generated speech, typing text on the console, asking a question to the ChatGPT model, getting available voices for text-to-speech conversion, and running the conversation. The main method orchestrates the conversation by asking a question, converting the response to speech, and playing it. Keep in mind that the text_to_speech method takes a string as input and asynchronously converts it to speech using the edge_tts.Communicate class and then the output speech is saved to an mp3 file (in the same directory where the talking_chatgpt.py is located).  Please note that each new output overwrites the previous mp3 file.
+This is a simple class called TalkToChatGPT that interacts with OpenAI's ChatGPT model to have a conversation. The class has methods for initializing the instance, getting user input either from voice or text, converting text to speech, playing the generated speech, typing text on the console, asking a question to the ChatGPT model, getting available voices for text-to-speech conversion, and running the conversation. The main method orchestrates the conversation by asking a question, converting the response to speech, and playing it. 
+
+Keep in mind that the text_to_speech method takes a string as input and asynchronously converts it to speech using the edge_tts.Communicate class and then the output speech is saved to an mp3 file (in the same directory where the talking_chatgpt.py is located).  Please note that each new output overwrites the previous mp3 file.
 
 The model in use is gpt-3.5-turbo-0613, but you can change it to any other OpenAI supported model (https://platform.openai.com/docs/models).
 
