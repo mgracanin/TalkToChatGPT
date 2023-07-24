@@ -16,7 +16,7 @@ You can install them using following command:
 pip install openai edge_tts SpeechRecognition
 ```
 
-Alos, for this to work, you'll need OpenAI API key. Just follow these steps to get it:
+Also, for this to work, you'll need OpenAI API key. Just follow these steps to get it:
 
 ### Step 1: Create an OpenAI Account
 
