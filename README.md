@@ -1,5 +1,6 @@
 # TalkToChatGPT
-Simple Python class that enables users to talk to ChatGPT (via API call), using voice or typing questions
+
+This is a simple class called TalkToChatGPT that interacts with OpenAI's ChatGPT model to have a conversation. The class has methods for initializing the instance, getting user input either from voice or text, converting text to speech, playing the generated speech, typing text on the console, asking a question to the ChatGPT model, getting available voices for text-to-speech conversion, and running the conversation. The main method orchestrates the conversation by asking a question, converting the response to speech, and playing it.
 
 Usage is simple, but there are some requirements. You need OpenAI API key. Just follow these steps to get it:
 
