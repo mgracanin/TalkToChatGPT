@@ -28,9 +28,11 @@ Click on the button that says "Create a new API Key" or similar. Follow the prom
 
 Be sure to note down your API key in a safe place, as it will not be shown again. However, if you lose it, you can always generate a new one.
 
-## How to use the class?
+Then you can define it either as an environment variable or using API_KEY variable directly in the code.
 
-It is simple, for example:
+## How to use the TalkToChatGPT?
+
+Just create an instance of the TalkToChatGPT, and run it within the asyncio.run() function, as follows:
 
 ```
 assistant = TalkToChatGPT(voice="en-US-JennyNeural", output_file="test.mp3", input_type="voice", language="en-US")
@@ -39,7 +41,7 @@ asyncio.run(assistant.main())
 
 The TalkToChatGPT class includes a convenient method called get_available_voices(). This method queries and displays all the available voices that can be used for the text-to-speech functionality in edge_tts. The output is neatly formatted as a dictionary, with each entry indicating a voice's friendly name and its corresponding short name which is used as a parameter when creating an instance of TalkToChatGPT.
 
-To use this method and list all the available voices, simply call get_available_voices() on an instance of TalkToChatGPT within the asyncio.run() function, as follows:
+To use this method and list all the available voices, simply call get_available_voices() on an instance of TalkToChatGPT within the asyncio.run() function:
 
 ```
 asyncio.run(assistant.get_available_voices())
