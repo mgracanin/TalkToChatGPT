@@ -8,7 +8,7 @@ You can easily use any other Python module for this like playsound (https://pypi
 
 The model in use is gpt-3.5-turbo-0613, but you can change it to any other OpenAI supported model (https://platform.openai.com/docs/models).
 
-This script relies on several external libraries, including openai for interacting with the OpenAI API (https://pypi.org/project/openai/), edge_tts for text-to-speech (https://pypi.org/project/edge-tts/), SpeechRecognition for speech recognition (https://pypi.org/project/SpeechRecognition/), ctypes utilizing winmm.dll for playing mp3 files, asyncio for running asynchronous tasks, and json for printing json formatted data. 
+This script relies on several external  and some built-in libraries, including openai for interacting with the OpenAI API (https://pypi.org/project/openai/), edge_tts for text-to-speech (https://pypi.org/project/edge-tts/), SpeechRecognition for speech recognition (https://pypi.org/project/SpeechRecognition/), ctypes utilizing winmm.dll for playing mp3 files, asyncio for running asynchronous tasks, and json for printing json formatted data. 
 
 You can install them using following command:
 
