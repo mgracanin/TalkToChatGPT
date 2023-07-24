@@ -6,7 +6,9 @@ Keep in mind that the text_to_speech method takes a string as input and asynchro
 
 The model in use is gpt-3.5-turbo-0613, but you can change it to any other OpenAI supported model (https://platform.openai.com/docs/models).
 
-This script relies on several external libraries, including openai for interacting with the OpenAI API (https://pypi.org/project/openai/), edge_tts for text-to-speech (https://pypi.org/project/edge-tts/), SpeechRecognition for speech recognition (https://pypi.org/project/SpeechRecognition/), ctypes and winmm for playing mp3 files, asyncio for running asynchronous tasks, and json for printing json formatted data. You can install them using following command:
+This script relies on several external libraries, including openai for interacting with the OpenAI API (https://pypi.org/project/openai/), edge_tts for text-to-speech (https://pypi.org/project/edge-tts/), SpeechRecognition for speech recognition (https://pypi.org/project/SpeechRecognition/), ctypes and winmm for playing mp3 files, asyncio for running asynchronous tasks, and json for printing json formatted data. 
+
+You can install them using following command:
 
 ```
 pip install openai edge_tts SpeechRecognition
